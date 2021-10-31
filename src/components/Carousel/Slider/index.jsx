@@ -36,7 +36,7 @@ function fullScreen() {
     elem.requestFullscreen();
   }
 }
-const arayJSX = arrayImages.map((arrayImages) => arrayImages *3);
+const arrayJSX = arrayImages.map((arrayImages) => arrayImages *3);
 
   return (
     <div className="slider">
