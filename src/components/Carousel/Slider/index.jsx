@@ -36,7 +36,8 @@ function fullScreen() {
     elem.requestFullscreen();
   }
 }
-const arrayJSX = arrayImages.map((arrayImages) => arrayImages *3);
+const arrayJSX = arrayImages.map((arrayImage) => arrayImage);
+console.log(arrayJSX);
 
   return (
     <div className="slider">
@@ -44,7 +45,7 @@ const arrayJSX = arrayImages.map((arrayImages) => arrayImages *3);
       <div className="slider-img" key={activeIndex}>
         <button onClick={decrement}>Back</button>
         <button onClick={handleStatusChage}>Auto</button>
-       <div id ="Fimg"><img style={{display: 'block'}}  src={arrayImages[activeIndex]} alt=""  width="800px"/></div>
+       <div id ="Fimg"><img style={{display: 'block'}}  src={arrayJSX[activeIndex]} alt="stars"  width="800px"/></div>
         <button onClick={increment}>Next</button>
         <button onClick={fullScreen}>fullScreen</button>
       </div>
